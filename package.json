@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "start": "node ./server",
-    "dev": "nodemon ./server -e js,json,hbs,scss,css"
+    "dev": "nodemon ./server -e js,json,hbs,scss"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
@@ -16,5 +16,18 @@
   },
   "devDependencies": {
     "nodemon": "^1.19.4"
-  }
+  },
+  "description": "![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FerroDude/lab-mongoose-movies.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FerroDude/lab-mongoose-movies/issues"
+  },
+  "homepage": "https://github.com/FerroDude/lab-mongoose-movies#readme"
 }
