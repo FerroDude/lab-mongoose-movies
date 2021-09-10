@@ -35,7 +35,19 @@ celebritiesRouter.post('/create', (req, res, next) => {
     catchPhrase
   })
     .then((celebrity) => {
-      res.redirect('/');
+      res.redirect('/celebrities');
+    })
+    .catch((error) => {
+      next(error);
+    });
+});
+
+celebritiesRouter.post('/:id/delete', (req, res, next) => {
+  const id = req.params.id;
+  console.log(id);
+  Celebrity.findByIdAndRemove(id)
+    .then(() => {
+      res.redirect('/celebrities');
     })
     .catch((error) => {
       next(error);
